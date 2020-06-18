@@ -1,3 +1,13 @@
 {
-    "go.inferGopath": true
+    "go.inferGopath": true,
+    "go.addTags": {
+    
+    },
+    "go.autocompleteUnimportedPackages": true,
+    "go.formatTool": "goimports",
+    "go.buildOnSave": "workspace",
+    "go.lintOnSave": "workspace",
+    "go.useCodeSnippetsOnFunctionSuggest": true,
+    "go.toolsGopath": "/home/lamvh/go",
+    "go.gopath": "/home/lamvh/go"
 }
