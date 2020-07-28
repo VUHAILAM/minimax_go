@@ -19,6 +19,7 @@ func (c *Computer) computerMove(board *Board) {
 				board.Grid[i][j] = c.symbol
 				if c.symbol == PLAYER_MAX {
 					scoreMiniMax := board.ImplementMinimax(0, PLAYER_MIN)
+					board.Grid[i][j] = "*"
 					if scoreMiniMax > c.score {
 						c.score = scoreMiniMax
 						x = i
@@ -26,6 +27,7 @@ func (c *Computer) computerMove(board *Board) {
 					}
 				} else {
 					scoreMiniMax := board.ImplementMinimax(0, PLAYER_MAX)
+					board.Grid[i][j] = "*"
 					if scoreMiniMax < c.score {
 						c.score = scoreMiniMax
 						x = i

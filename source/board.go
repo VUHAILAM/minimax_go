@@ -27,9 +27,11 @@ func NewBoard() *Board {
 }
 
 func (b *Board) Print() {
+	fmt.Print(" ")
 	for i := 1; i <= SIZE; i++ {
 		fmt.Print(i, " ")
 	}
+	fmt.Println()
 	for i := 0; i < SIZE; i++ {
 		fmt.Print((i + 1), " ")
 		for j := 0; j < SIZE; j++ {

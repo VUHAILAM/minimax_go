@@ -13,6 +13,8 @@ func (u *User) userMove(board *Board) {
 	fmt.Println("Enter the coordinates x and y")
 	fmt.Scan(&x)
 	fmt.Scan(&y)
+	x--
+	y--
 	if board.Grid[x][y] == "*" {
 		board.Grid[x][y] = u.symbol
 	} else {
